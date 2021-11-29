@@ -8,7 +8,6 @@ module.exports = {
     },
 
     discord: {
-        token: 'ODU4NDUzNDUxNjcwODE0NzYx.YNeXFA.yRJxoTxoNOQ9UPLsSRPPXeOoANA',
         prefix: '!',
         activity: 'Face Off',
     },
