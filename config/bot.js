@@ -8,8 +8,9 @@ module.exports = {
     },
 
     discord: {
+        token: 'ODU4NDUzNDUxNjcwODE0NzYx.YNeXFA.yRJxoTxoNOQ9UPLsSRPPXeOoANA',
         prefix: '!',
-        activity: 'Petr F. je gay',
+        activity: 'Face Off',
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],

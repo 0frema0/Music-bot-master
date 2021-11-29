@@ -1,8 +1,6 @@
 const fs = require('fs');
 const discord = require('discord.js');
-
 const client = new discord.Client({ disableMentions: 'everyone' });
-
 const { Player } = require('discord-player');
 
 client.player = new Player(client);
@@ -11,7 +9,8 @@ client.emotes = client.config.emojis;
 client.filters = client.config.filters;
 client.commands = new discord.Collection();
 
-client.login(process.env.token);
+client.login(client.config.discord.token);
+
 
 fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
@@ -37,5 +36,3 @@ for (const file of player) {
     const event = require(`./player/${file}`);
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
-
-client.login(client.config.discord.token);
